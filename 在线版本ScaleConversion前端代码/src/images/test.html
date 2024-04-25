@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="block" style="position: relative;">
+    <img id="vis_img1" src="image1.jpg" style="width: 100%; height: 100%" alt=""/>
+    <canvas id="canvas1" class="canvas" style="position: absolute; top: 0; left: 0;"></canvas>
+</div>
+
+<div class="block" style="position: relative;">
+    <img id="vis_img2" src="image2.jpg" style="width: 100%; height: 100%" alt=""/>
+    <canvas id="canvas2" class="canvas" style="position: absolute; top: 0; left: 0;"></canvas>
+</div>
+</body>
+</html>
+
+<script>
+    // 第一个图像和画布
+    const img1 = document.getElementById('vis_img1');
+    const canvas1 = document.getElementById('canvas1');
+    const ctx1 = canvas1.getContext('2d');
+    // 设置画布大小与图像相同
+    canvas1.width = img1.width;
+    canvas1.height = img1.height;
+    console.log(canvas1)
+
+    // 第二个图像和画布
+    const img2 = document.getElementById('vis_img2');
+    const canvas2 = document.getElementById('canvas2');
+    const ctx2 = canvas2.getContext('2d');
+    // 设置画布大小与图像相同
+    canvas2.width = img2.width;
+    canvas2.height = img2.height;
+    console.log(canvas2)
+
+    // 在这里添加绘制矩形的逻辑或其他你需要的功能
+
+</script>
